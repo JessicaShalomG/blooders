@@ -2,8 +2,8 @@ import React from 'react';
 
 const GroceryItem = (props) => (
   <div>
-    <span> description 1 </span>
-    <span> quantity 1 </span>
+        Item: {props.item.description}
+        Quantity: {props.item.quantity}
   </div>
 )
 
