@@ -4,39 +4,41 @@ class AddGrocery extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      desc: '',
-      quantity:''
+      description: '',
+      quantity: ''
     }
-
-    this.handleDesc = this.handleDesc.bind(this);
     this.handleQuantity = this.handleQuantity.bind(this);
+    this.handleDescription = this.handleDescription.bind(this);
+    this.addItem = this.addItem.bind(this);
   }
 
-  resetDefault(){
-        this.setState({
-              desc:'',
-              quantity:''
-        })
+  handleDescription(event){
+    this.setState({
+      description: event.target.value
+    })
   }
 
-  handleDesc(e){
-        this.setState({
-                desc: e.target.value
-        })
+  handleQuantity(event){
+    this.setState({
+      quantity: event.target.value
+    })
   }
 
-  handleQuantity(e){
-          this.setState({
-            quantity: e.target.value
-          })
+  addItem(){
+    this.props.addGroceryItem(this.state.description, this.state.quantity);
+    this.setState({
+      description: '',
+      quantity: ''
+    })
   }
 
   render () {
     return (<div>
-      Description: <input value ={this.state.desc} onChange={(e) => this.handleDesc(e)} ></input>
+      Description: <input value={this.state.description} onChange={this.handleDescription}></input>
       <br />
-      Quantity: <input value = {this.state.quantity} onChange{(e) => this.handleQuantity(e)} ></input>
-      <button onClick = {(desc. quantity) => this.props.onClick(this.state.desc, this.state.quantity)}>Add Grocery</button>
+      Quantity: <input value={this.state.quantity} onChange={this.handleQuantity}></input>
+                                                                                                                
+    <button onClick={this.addItem}>Add Grocery</button>
     </div>);
   }
 }
