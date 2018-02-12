@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import data from './data.js';
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -9,9 +9,12 @@ class App extends React.Component {
     }
   }
 
-  
   render () {
-    return null;
+    return (<div>
+      <h1>Grocery List</h1>
+      <AddGrocery />
+      <GroceryList />
+    </div>)
   }
 }
 
