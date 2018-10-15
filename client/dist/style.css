@@ -1,15 +1,11 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: honeydew;
-  color: seagreen;
+/*this is for the footer at the bottom */
+footer{
+align-self: flex-end;
+background-color: none;
+line-height: 5;
+text-align: center;
+margin-top:10vw;
+height: 20vw;
+width: 100%
 }
-
-#main {
-  width: 50%;
-  margin: auto;
-  text-align: center;
-}
-
-.groceries {
-  margin: 10px;
-}
+/*thi is to allign the info components with the images below the title*/

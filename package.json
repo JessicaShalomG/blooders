@@ -1,5 +1,5 @@
 {
-  "name": "hackreactor-groceries",
+  "name": "technical-challenge",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "react-dev": "webpack -d --watch",
     "start": "nodemon server/index.js"
   },
-  "author": "Beth Johnson",
+  "author": "Jessica Gonzalez",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.23.1",
@@ -21,6 +21,8 @@
     "express": "^4.15.0",
     "jquery": "^3.1.1",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-bootstrap": "^0.32.4",
+    "react-dom": "^15.4.2",
+    "react-router": "^4.3.1"
   }
 }
