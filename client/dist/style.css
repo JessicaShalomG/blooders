@@ -9,3 +9,171 @@ height: 20vw;
 width: 100%
 }
 /*thi is to allign the info components with the images below the title*/
+.map{
+  position: relative;
+  bottom: 140px;
+  left:
+}
+
+.donadores{
+  position: relative;
+  bottom: 350px;
+  left: 350px;
+}
+
+.bloodbag{
+  position: relative;
+  left:200px;
+  top: 15px;
+}
+
+.Download{
+  color: red;
+  font-weight: bold;
+  position: relative;
+  right: 40%;
+}
+
+.Web{
+color: red;
+font-weight: bold;
+position: relative;
+bottom: 272px;
+right: 355px;
+}
+
+.WebList{
+  color: grey;
+  font-weight: bold;
+  position: relative;
+  right: 350px;
+  bottom: 330px ;
+}
+
+.WebList1{
+  color: grey;
+  font-weight: bold;
+  position: relative;
+  right: 280px;
+  bottom: 390px ;
+}
+
+.WebList2{
+  color: grey;
+  font-weight: bold;
+  position: relative;
+  right: 280px;
+  bottom: 450px ;
+}
+
+.WebList3{
+  color: grey;
+  font-weight: bold;
+  position: relative;
+  right: 310px;
+  bottom: 510px ;
+}
+
+.WebList4{
+  color: grey;
+  font-weight: bold;
+  position: relative;
+  right: 335px;
+  bottom: 570px ;
+}
+
+.Acercade{
+  color: red;
+  font-weight: bold;
+  position: relative;
+  bottom: 855px;
+
+}
+
+.Acercade1{
+  color: grey;
+  font-weight: bold;
+  position: relative;
+  bottom: 910px ;
+}
+
+.Acercade2{
+  color: grey;
+  font-weight: bold;
+  position: relative;
+  bottom: 966px ;
+  right: 18px;
+}
+
+.Acercade3{
+  color: grey;
+  font-weight: bold;
+  position: relative;
+  bottom: 1028px ;
+  left: 35px;
+}
+.Acercade4{
+  color: grey;
+  font-weight: bold;
+  position: relative;
+  bottom: 1088px ;
+  left: 18px;
+}
+.Acercade5{
+  color: grey;
+  font-weight: bold;
+  position: relative;
+  bottom: 1148px ;
+  left: 42px;
+}
+
+.ResdesSociales{
+  color: red;
+  font-weight: bold;
+  position: relative;
+  bottom: 1435px;
+  left: 350px;
+}
+
+.ResdesSocialesImages{
+  position: relative;
+  bottom: 1480px;
+  left: 320px;
+}
+
+.ResdesSocialesImages1{
+  position: relative;
+  bottom: 1558px;
+  left: 360px;
+}
+.ResdesSocialesImages2{
+  position: relative;
+  bottom: 1637px;
+  left: 405px;
+}
+.red{
+  color:red;
+}
+h1,p{
+    color: grey;
+    font-weight: bold;
+}
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+/* Bottom left text */
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+.pic{
+  border-radius: 25px;
+  width:100%;
+  width: 300px;
+    height: 350px;
+}

@@ -7,7 +7,8 @@ class Main extends React.Component {
       name: undefined,
       address: undefined,
       phone: undefined,
-      registered:undefined
+      storage:undefined
+
     }
 this.getInfo =this.getInfo.bind(this);
   }
@@ -18,14 +19,23 @@ this.getInfo =this.getInfo.bind(this);
       return results.json();
 
     }).then(data => {
-      console.log("this is data", data);
-      this.setState({
-        name: data.data[0].hospital.name,
-        address: data.data[0].hospital.address,
-        phone: data.data[0].hospital.phone,
-        registered:data.data[0].hospital.registered
+
+      data.data.map((x)=>{
+        let hospitals=[];
+        if (x.hospital.registered === 1){
+          hospitals.push(x.hospital)
+          console.log(hospitals)
+          console.log(typeof hospitals);
+
+          this.setState({
+            name: data.data[0].hospital.name,
+            address: data.data[0].hospital.address,
+            phone: data.data[0].hospital.phone,
+            storage:hospitals
+          })
+        }
       })
-console.log(this.state)
+
     })
 
     }
@@ -34,12 +44,17 @@ console.log(this.state)
   }
   render () {
     return(
-      <div>
-        name= {this.state.name}
-        address= {this.state.address}
-        phone= {this.state.phone}
+      <div className="container">
+      <img className="pic" src="https://i.imgur.com/ysEtsRZ.jpg" alt="Snow"/>
+      <div className="bottom-left">
+         {this.state.name}
+         <br/>
+         {this.state.address}
+         <br/>
+         {this.state.phone}
 
 
+      </div>
       </div>
     );
   }
